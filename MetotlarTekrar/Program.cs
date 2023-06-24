@@ -14,8 +14,10 @@
             musteri2.Id = 2;
             musteri2.Adi = "Muhammed";
             musteri2.Soyadi = "Aslan";
+            MusteriManager musteriManager = new MusteriManager();
 
-            MusteriManager.Listele(musteri1,musteri2);
+
+            musteriManager.Listele(musteri1,musteri2);
             
         }
     }

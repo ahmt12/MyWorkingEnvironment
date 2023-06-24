@@ -34,17 +34,15 @@ namespace MetotlarTekrar
                 Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi);
             }
 
-            if ((IdNumber1 == musteri2.Id && IdNumber1 > IdNumber2) || (IdNumber2 == musteri2.Id && IdNumber2 > IdNumber1))
+            else if ((IdNumber1 == musteri2.Id && IdNumber1 > IdNumber2) || (IdNumber2 == musteri2.Id && IdNumber2 > IdNumber1))
             {
                 Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi);
                 Console.WriteLine(musteri1.Id + " " + musteri1.Adi + " " + musteri1.Soyadi);
             }
-
-
-
-
-
-
+            else
+            {
+                Console.WriteLine("Girdiğiniz ID numaralarını kontrol ediniz.");
+            }
 
 
         }
