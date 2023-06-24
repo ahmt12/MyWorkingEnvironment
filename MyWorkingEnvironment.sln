@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWorkingEnvironment", "MyWorkingEnvironment\MyWorkingEnvironment.csproj", "{EFB8C73F-4DBB-4B52-B7B0-F16E9C1CAF85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetotlarTekrar", "MetotlarTekrar\MetotlarTekrar.csproj", "{27F8D392-B38E-4EA2-B559-91AC15A11C63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassMetotDemo", "MetotlarTekrar\ClassMetotDemo.csproj", "{27F8D392-B38E-4EA2-B559-91AC15A11C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

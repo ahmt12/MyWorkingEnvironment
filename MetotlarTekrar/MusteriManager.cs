@@ -42,14 +42,14 @@ namespace MetotlarTekrar
             if ((IdNumber1 == musteri1.Id && IdNumber1 > IdNumber2) || (IdNumber2==musteri1.Id && IdNumber2>IdNumber1))
             {
                 
-                Console.WriteLine(musteri1.Id+ " " +musteri1.Adi+ " " +musteri1.Soyadi+"\n");
+                Console.WriteLine(musteri1.Id+ " " +musteri1.Adi+ " " +musteri1.Soyadi);
 
                 Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi);
             }
 
             else if ((IdNumber1 == musteri2.Id && IdNumber1 > IdNumber2) || (IdNumber2 == musteri2.Id && IdNumber2 > IdNumber1))
             {
-                Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi+"\n");
+                Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi);
 
                 Console.WriteLine(musteri1.Id + " " + musteri1.Adi + " " + musteri1.Soyadi);
             }
@@ -72,7 +72,7 @@ namespace MetotlarTekrar
             }
             else if(IdNumber==musteri2.Id)
             {
-                Console.WriteLine("{0} Id numaralı {1} isimli müşterimiz listeden kaldırılmıştır. Yeni liste aşağıda verilmiştir.",musteri2.Id,musteri2.Adi+"\n");
+                Console.WriteLine("{0} Id numaralı {1} isimli müşterimiz listeden kaldırılmıştır. Yeni liste aşağıda verilmiştir.\n",musteri2.Id,musteri2.Adi);
                 Console.WriteLine(musteri1.Id + " " + musteri1.Adi + " " + musteri1.Soyadi);
 
             }
