@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWorkingEnvironment", "MyWorkingEnvironment\MyWorkingEnvironment.csproj", "{EFB8C73F-4DBB-4B52-B7B0-F16E9C1CAF85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetotlarTekrar", "MetotlarTekrar\MetotlarTekrar.csproj", "{27F8D392-B38E-4EA2-B559-91AC15A11C63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFB8C73F-4DBB-4B52-B7B0-F16E9C1CAF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB8C73F-4DBB-4B52-B7B0-F16E9C1CAF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB8C73F-4DBB-4B52-B7B0-F16E9C1CAF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB8C73F-4DBB-4B52-B7B0-F16E9C1CAF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F8D392-B38E-4EA2-B559-91AC15A11C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F8D392-B38E-4EA2-B559-91AC15A11C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F8D392-B38E-4EA2-B559-91AC15A11C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F8D392-B38E-4EA2-B559-91AC15A11C63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EF311FE-715A-428B-BED0-A632C87057CB}
+	EndGlobalSection
+EndGlobal
