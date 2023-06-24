@@ -8,15 +8,24 @@ namespace MetotlarTekrar
 {
     internal class MusteriManager
     {
-        public void Add(Musteri musteri)
+        public void Add(Musteri musteri1,Musteri musteri2)
         {
-            //
-            //
-            //
-            Console.WriteLine("{0} Id numaralı {1} kişisi listeye eklendi.",musteri.Id,musteri.Adi);
+            Console.WriteLine("Lütfen eklenecek kişiye ait bir Id numarası giriniz:");
+            string IdInput = Console.ReadLine();
+            int IdNumber = Convert.ToInt32(IdInput);
+            if (IdNumber==musteri1.Id)
+            {
+                Console.WriteLine("{0} Id numaralı {1} kişisi listeye eklendi.\n",musteri1.Id,musteri1.Adi);
+            }
+            else if (IdNumber==musteri2.Id)
+            {
+                Console.WriteLine("{0} Id numaralı {1} kişisi listeye eklendi.",musteri2.Id,musteri2.Adi);
+            }
+            else
+            {
+                Console.WriteLine("{0} Id numarası sistemimimizde kayıtlı değil.",IdNumber);
+            }
         }
-
-
         public void Listele(Musteri musteri1, Musteri musteri2)
         {
 
@@ -28,15 +37,20 @@ namespace MetotlarTekrar
             string IdInput2 = Console.ReadLine();
             int IdNumber2 = Convert.ToInt32(IdInput2);
 
+            Console.WriteLine("Müşterilerimiz Id numarasına göre sıralanmıştır:\n");
+
             if ((IdNumber1 == musteri1.Id && IdNumber1 > IdNumber2) || (IdNumber2==musteri1.Id && IdNumber2>IdNumber1))
             {
-                Console.WriteLine(musteri1.Id+ " " +musteri1.Adi+ " " +musteri1.Soyadi);
+                
+                Console.WriteLine(musteri1.Id+ " " +musteri1.Adi+ " " +musteri1.Soyadi+"\n");
+
                 Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi);
             }
 
             else if ((IdNumber1 == musteri2.Id && IdNumber1 > IdNumber2) || (IdNumber2 == musteri2.Id && IdNumber2 > IdNumber1))
             {
-                Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi);
+                Console.WriteLine(musteri2.Id + " " + musteri2.Adi + " " + musteri2.Soyadi+"\n");
+
                 Console.WriteLine(musteri1.Id + " " + musteri1.Adi + " " + musteri1.Soyadi);
             }
             else
@@ -44,14 +58,24 @@ namespace MetotlarTekrar
                 Console.WriteLine("Girdiğiniz ID numaralarını kontrol ediniz.");
             }
 
-
         }
-        public void Remove()
+        public void Remove(Musteri musteri1, Musteri musteri2)
         {
+            Console.WriteLine("Lütfen kaldırmak istediğiniz şahsın Id numarasını giriniz:");
+            string IdInput = Console.ReadLine();
+            int IdNumber=Convert.ToInt32(IdInput);
+            if (IdNumber==musteri1.Id)
+            {
+                Console.WriteLine("{0} Id numaralı {1} isimli müşterimiz listeden kaldırılmıştır. Yeni liste aşağıda verilmiştir.\n",musteri1.Id,musteri1.Adi);
 
+                Console.WriteLine(musteri2.Id+" "+musteri2.Adi+" "+musteri2.Soyadi);
+            }
+            else if(IdNumber==musteri2.Id)
+            {
+                Console.WriteLine("{0} Id numaralı {1} isimli müşterimiz listeden kaldırılmıştır. Yeni liste aşağıda verilmiştir.",musteri2.Id,musteri2.Adi+"\n");
+                Console.WriteLine(musteri1.Id + " " + musteri1.Adi + " " + musteri1.Soyadi);
 
-
+            }
         }
-
     }
 }

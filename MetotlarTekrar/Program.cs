@@ -16,8 +16,11 @@
             musteri2.Soyadi = "Aslan";
             MusteriManager musteriManager = new MusteriManager();
 
-
+            musteriManager.Add(musteri1,musteri2);
+            Console.WriteLine("-----------------------------");
             musteriManager.Listele(musteri1,musteri2);
+            Console.WriteLine("-----------------------------");
+            musteriManager.Remove(musteri1, musteri2);
             
         }
     }
