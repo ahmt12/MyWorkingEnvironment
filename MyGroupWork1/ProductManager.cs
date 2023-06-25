@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Channels;
@@ -9,56 +11,59 @@ namespace MyGroupWork1
 {
     internal class ProductManager
     {
+
+
         public void Add(Product product1, Product product2, Product product3)
         {
-            Console.WriteLine("Enter the code of the product to be added to the cart: ");
-            var codeA = Console.ReadLine();
-            int code1 = Convert.ToInt32(codeA);
+            Console.WriteLine("Can you please write down how many products you will add to your cart? ");
+            var number = Console.ReadLine();
+            int number1 = Convert.ToInt32(number);
 
-            Console.WriteLine("If you want to add more products to your cart, press 1. If you do not want, dial 0.");
-            var buttonA=Console.ReadLine();
-            int button1 = Convert.ToInt32(buttonA);
-            if (button1==1)
+            int[] price = new int[number1];
+
+            for (int i = 0; i < number1; i++)
             {
-                Console.WriteLine("Enter the code of the product to be added to the cart: ");
-                var codeB = Console.ReadLine();
-                int code2 = Convert.ToInt32(codeB);
+                Console.WriteLine("Could you please write the code of the product you will add to the cart? ");
+                var code = Console.ReadLine();
+                int code1 = Convert.ToInt32(code);
 
-                Console.WriteLine("If you want to add more products to your cart, press 1. If you do not want, dial 0.");
-                var buttonB = Console.ReadLine();
-                int button2 = Convert.ToInt32(buttonB);
-                if (button2==1)
+                if (code1 == 10)
                 {
-                    Console.WriteLine("The last remaining product has also been added to the cart.\n");
-                    Console.WriteLine("Total cart amount: {0}\n",product1.Price+product2.Price+product3.Price);
-                    Console.WriteLine("The remaining amount of stock for the {0} coded product: {1}\n",product1.Code,product1.Stocks-1);
-                    Console.WriteLine("The remaining amount of stock for the {0} coded product: {1}\n", product2.Code, product2.Stocks - 1);
-                    Console.WriteLine("The remaining amount of stock for the {0} coded product: {1}\n", product3.Code, product3.Stocks - 1);
-
+                    price[i] = product1.Price;
+                    product1.Stocks--;
                 }
-                else if (button2==0)
+                else if (code1 == 11)
                 {
-
+                    price[i] = product2.Price;
+                    product2.Stocks--;
+                }
+                else if (code1 == 12)
+                {
+                    price[i] = product3.Price;
+                    product3.Stocks--;
                 }
                 else
                 {
-                    Console.WriteLine("You pressed a wrong button.");
+                    Console.WriteLine("You have entered an invalid code.");
                 }
-
-
-
-
             }
-            else if (button1==0) 
-            { 
 
+            int total_price = 0;
+            for (int i = 0; i < price.Length; i++)
+            {
+                total_price += price[i];
+            }
+
+            if (total_price >= 400)
+            {
+                Console.WriteLine("CONGRATULATIONS. YOU WILL NOT PAY ANY FEE FOR SHIPPING\n");
             }
             else
             {
-                Console.WriteLine("You pressed a wrong button.");
+                Console.WriteLine("To take advantage of the free shipping opportunity, add another {0} euro product to the cart.", 400 - total_price);
+                Console.WriteLine("Your current basket amount is {0} euro, including the shipping fee.", total_price + 30);
             }
-
         }
-        
+
     }
 }
