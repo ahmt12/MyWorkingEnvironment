@@ -30,11 +30,11 @@ namespace MetotlarTekrar
         {
 
             Console.WriteLine("Lütfen bir Id numarası giriniz: ");
-            string IdInput1 = Console.ReadLine();
+            var IdInput1 = Console.ReadLine();
             int IdNumber1 = Convert.ToInt32(IdInput1);
 
             Console.WriteLine("Lütfen bir Id numarası giriniz: ");
-            string IdInput2 = Console.ReadLine();
+            var IdInput2 = Console.ReadLine();
             int IdNumber2 = Convert.ToInt32(IdInput2);
 
             Console.WriteLine("Müşterilerimiz Id numarasına göre sıralanmıştır:\n");
@@ -62,7 +62,7 @@ namespace MetotlarTekrar
         public void Remove(Musteri musteri1, Musteri musteri2)
         {
             Console.WriteLine("Lütfen kaldırmak istediğiniz şahsın Id numarasını giriniz:");
-            string IdInput = Console.ReadLine();
+            var IdInput = Console.ReadLine();
             int IdNumber=Convert.ToInt32(IdInput);
             if (IdNumber==musteri1.Id)
             {
