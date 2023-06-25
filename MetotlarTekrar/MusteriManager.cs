@@ -11,7 +11,7 @@ namespace MetotlarTekrar
         public void Add(Musteri musteri1,Musteri musteri2)
         {
             Console.WriteLine("Lütfen eklenecek kişiye ait bir Id numarası giriniz:");
-            string IdInput = Console.ReadLine();
+            var IdInput = Console.ReadLine();
             int IdNumber = Convert.ToInt32(IdInput);
             if (IdNumber==musteri1.Id)
             {

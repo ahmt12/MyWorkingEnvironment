@@ -5,7 +5,11 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWorkingEnvironment", "MyWorkingEnvironment\MyWorkingEnvironment.csproj", "{EFB8C73F-4DBB-4B52-B7B0-F16E9C1CAF85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassMetotDemo", "MetotlarTekrar\ClassMetotDemo.csproj", "{27F8D392-B38E-4EA2-B559-91AC15A11C63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassMetotDemo", "MetotlarTekrar\ClassMetotDemo.csproj", "{27F8D392-B38E-4EA2-B559-91AC15A11C63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyOPPProject", "MyOPPProject\MyOPPProject.csproj", "{CB745659-B81B-48A3-A966-D63666F7F956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGroupWork1", "MyGroupWork1\MyGroupWork1.csproj", "{372FAF1D-8813-4848-8059-510ABA1A0569}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{27F8D392-B38E-4EA2-B559-91AC15A11C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F8D392-B38E-4EA2-B559-91AC15A11C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F8D392-B38E-4EA2-B559-91AC15A11C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB745659-B81B-48A3-A966-D63666F7F956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB745659-B81B-48A3-A966-D63666F7F956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB745659-B81B-48A3-A966-D63666F7F956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB745659-B81B-48A3-A966-D63666F7F956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372FAF1D-8813-4848-8059-510ABA1A0569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372FAF1D-8813-4848-8059-510ABA1A0569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372FAF1D-8813-4848-8059-510ABA1A0569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372FAF1D-8813-4848-8059-510ABA1A0569}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
