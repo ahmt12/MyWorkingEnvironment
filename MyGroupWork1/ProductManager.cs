@@ -30,17 +30,17 @@ namespace MyGroupWork1
                 if (code1 == 10)
                 {
                     price[i] = product1.Price;
-                    product1.Stocks--;
+                    product1.Stocks=product1.Stocks-1;
                 }
                 else if (code1 == 11)
                 {
                     price[i] = product2.Price;
-                    product2.Stocks--;
+                    product2.Stocks=product2.Stocks-1;
                 }
                 else if (code1 == 12)
                 {
                     price[i] = product3.Price;
-                    product3.Stocks--;
+                    product3.Stocks=product3.Stocks-1;
                 }
                 else
                 {
@@ -48,12 +48,7 @@ namespace MyGroupWork1
                 }
             }
 
-            int total_price = 0;
-            for (int i = 0; i < price.Length; i++)
-            {
-                total_price += price[i];
-            }
-
+            int total_price = price.Sum();
             if (total_price >= 400)
             {
                 Console.WriteLine("CONGRATULATIONS. YOU WILL NOT PAY ANY FEE FOR SHIPPING\n");
