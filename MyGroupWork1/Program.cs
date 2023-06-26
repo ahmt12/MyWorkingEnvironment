@@ -5,20 +5,10 @@
         static void Main(string[] args)
         {
 
-            //Üç ürüne ait ürün kodu, fiyatı, stoktaki ürün adedi bilgileri girilecek. 
-
-            /*Mağazada kargonun ücretsiz olması için minimum 400 liralık ürün eklenmeli. Eğer müşterinin eklediği ürün 400tl altında ise
-            ekranda ücretsiz kargo için kalan fiyat yazacak. Nüşteri bu fiyatı onaylamak istiyorsa son olarak ekranda çıkacak olan 
-            toplam ödenmesi gereken ücret kısmında +30tl daha eklenecek. */
-
-            // Eğer 400tl üstü ise ekranda tebrikler kargonuz ücretsiz yazacak.
-
-           // Müşteri bir ürünü satın aldığında kalan stok adedi her bir ürün için tekrardan yazdırılacak.
-
 
 
             Product product1 = new Product();
-            product1.Name = "Computer";kk
+            product1.Name = "Computer";
             product1.Code = 10;
             product1.Price = 250;
             product1.Stocks = 5;
