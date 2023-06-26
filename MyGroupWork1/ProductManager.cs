@@ -52,12 +52,20 @@ namespace MyGroupWork1
             if (total_price >= 400)
             {
                 Console.WriteLine("CONGRATULATIONS. YOU WILL NOT PAY ANY FEE FOR SHIPPING\n");
+                Console.WriteLine("The total amount of fees you will pay: {0} euro",total_price);
             }
             else
             {
-                Console.WriteLine("To take advantage of the free shipping opportunity, add another {0} euro product to the cart.", 400 - total_price);
-                Console.WriteLine("Your current basket amount is {0} euro, including the shipping fee.", total_price + 30);
+                Console.WriteLine("To take advantage of the free shipping opportunity, add another {0} euro product to the cart.\n", 400 - total_price);
+                Console.WriteLine("Your current basket amount is {0} euro, including the shipping fee.\n", total_price + 30);
             }
+
+
+            Console.WriteLine("Finally, the number of stock remaining from the products in order is as follows:\n");
+            Console.WriteLine("----------STOCKS----------");
+            Console.WriteLine("MOQ of remaining stock for {0} coded product: {1}", product1.Code, product1.Stocks);
+            Console.WriteLine("MOQ of remaining stock for {0} coded product: {1}", product2.Code, product2.Stocks);
+            Console.WriteLine("MOQ of remaining stock for {0} coded product: {1}", product3.Code, product3.Stocks);
         }
 
     }
