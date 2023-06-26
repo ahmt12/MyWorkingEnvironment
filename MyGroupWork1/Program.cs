@@ -18,7 +18,7 @@
 
 
             Product product1 = new Product();
-            product1.Name = "Computer";
+            product1.Name = "Computer";kk
             product1.Code = 10;
             product1.Price = 250;
             product1.Stocks = 5;
